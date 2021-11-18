@@ -20,7 +20,6 @@ namespace MTFramework.WebAPI
     {
         public Startup(IHostingEnvironment env)
         {
-            // In ASP.NET Core 3.0 env will be an IWebHostEnvironment , not IHostingEnvironment.
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
